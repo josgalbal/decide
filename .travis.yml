@@ -21,7 +21,9 @@ script:
   - coverage xml
   - python-codacy-coverage -r coverage.xml
 deploy:
-provider: heroku
-app: egc-app-decide-jm
-strategy: git
-api_key: $HEROKU_AUTH_TOKEN
+ provider: heroku
+ app: egc-app-decide-jm
+ strategy: git
+ api_key:
+   secure: n0ih/zYa0qu9kZ9pSdzaVHKcamUsGEScemWGivs0V6BO26N1l/DlLVjhtaosnvshKZVND1BIOWOzPIi538vLuCoYj4ze9tRyw2XyPsgrMExgzt2KH9p4s/QKZjgTK7rc321fiXbvacMGtbFb5ujBle8WKfB+/UN2iwVMahikzUdFpJObZ2Mks5NODBVZapu/Y5hBSbFwxIpNHfycKQckFyLQ9s7HpYmBUcDjLmWx/rC1zYJJOpCeT1MRktRTURXYTPf15aiKP9tHCkYenI2gIoGlrLl4bbOo2hLml11SPMJ/WPQ75hjtWQBcYsyYvTN22ftTlWQ3FewxpH8+YpK5C+WVeITkE5JebGqPafjNYMb4mw4ELgnUzbmsrXcxV/SzSgafah6dru5UJ0iFro7iN6xU7wZY2//XBLgElfrvvrjC/RuPk87PDX3xFYFcmcfYQLPi7+46+1Oq7WaXmFP6S0K16T23S+Bn7b1b4Q4GGmar46jqGTzW+TILgUkmIMan0sjdq1VwH1XipJJlr4+Lxf6AeYaoyO6srT2wW5Quc1qGFq7sq4IcPNw+d+vsmR8lsYWsrhxBVGosUlx1kh8pIlHL+DhnSXQLIhUp5gvx8pzzZMssHC6XklJgH8A5XSn6cMB737Onr/1k1hhPmYfAphf2ctzT2OUsBDHRsTsQX20=
+                                
